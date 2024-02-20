@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dropdown Menu</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="dropdown">
+      <input class="text-box" type="text" placeholder="Select on" readonly>
+      <div class="options">
+     <div onclick="show('HTML')"><ion-icon name="logo-html5"></ion-icon>HTML</div>
+     <div onclick="show('CSS')"><ion-icon name="logo-css3"></ion-icon>CSS</div>
+     <div onclick="show('JavaScript')"><ion-icon name="logo-javascript"></ion-icon>JavaScript</div>
+     <div onclick="show('Angular')"><ion-icon name="logo-angular"></ion-icon>Angular</div>
+     <div onclick="show('React')"><ion-icon name="logo-react"></ion-icon>React</div>
+     <div onclick="show('Vue')"><ion-icon name="logo-vue"></ion-icon>Vue</div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
